@@ -1,0 +1,33 @@
+<div class="d-flex flex-column bg-dark ">
+	<img class="banner" src="/images/banner<%=(Math.floor(Math.random()*2) % 2 + 1)%>.jpg" />
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
+	
+		<a class="navbar-brand" href="/">Custom Mech KBD</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="nav-items" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="nav-items">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item <% if( title === 'Order' ){%>active<%}%>">
+					<a class="nav-link" href="\order">Custom Order</a>
+				</li>
+				<li class="nav-item <% if( title === 'Shop' ){%>active<%}%>">
+					<a class="nav-link" href="\order">Prebuilt</a>
+				</li>
+				<li class="nav-item <%if(title === 'About' ) {%>active<% } %>">
+					<a class="nav-link" href="\about">About</a>
+				</li>
+				<li class="nav-item <%if(title === 'Pricing' ) {%>active<% } %>">
+					<a class="nav-link" href="\pricing">Pricing</a>
+				</li>
+				<li class="nav-item <%if(title === 'FAQs' ) {%>active<% } %>">
+					<a class="nav-link" href="\pricing">FAQs</a>
+				</li>
+			</ul>
+		</div>
+
+	</nav>
+
+</div>

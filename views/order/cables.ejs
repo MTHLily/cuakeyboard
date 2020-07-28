@@ -1,0 +1,13 @@
+<% currentKeyCap = 'images/cable.jpg' %>
+<img id="switchImg" class="mx-auto d-block" src=<%=currentKeyCap%>  >
+<div class="carousel-caption d-flex flex-column p-2">
+	<h1 class="category">Cables</h1>
+	<select class="custom-select" id="switchSelect">
+		<option selected>Choose...</option>
+		<option value="tokyo">Tokyo Thing</option>
+	</select>
+	<div class="w-100 d-flex m-5">
+		<button class="btn btn-back p-2 mr-5 w-100" onclick="$('#registration').carousel('prev')">Prev</button>
+		<button class="btn btn-submit p-2  mr-5 w-100" onclick="$('#registration').carousel('next')">Submit</button>
+	</div>
+</div>

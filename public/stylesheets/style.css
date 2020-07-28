@@ -1,0 +1,67 @@
+@font-face{
+	font-family: "Allura-Regular";
+	src: url("/Allura-Regular.otf") format("opentype");
+}
+
+img.banner{
+	height: 20vh;
+	width: 100%;
+	object-fit:  cover;
+	object-position: 100% 45%;
+
+	background-color: black;
+	opacity: .7;
+}
+
+html, body{
+	height: 100%;
+}
+
+.carousel-item img{
+
+	opacity: .4;
+
+	height: 100% !important;
+	width: 100%;
+	object-fit: cover;
+
+}
+
+.carousel-item{
+	height: 100%;
+	background-color: black;
+	-webkit-transform-style: preserve-3d;
+-moz-transform-style: preserve-3d;
+transform-style: preserve-3d;
+
+}
+
+.carousel-caption{
+	top: 50%;
+	transform: translateY(-50%);
+	bottom: intial;
+}
+
+.btn-reg{
+	background-color: rgba( 0, 0, 0, .75);
+}
+
+.btn-back{
+	background-color: rgba( 220, 20, 60, .75 )
+}
+
+.btn-submit{
+	background-color: rgba( 29, 41, 81, .75);
+}
+
+.custom-select{
+	height: 4em !important;
+	background-color: rgba( 10, 10, 10, .75) !important;
+	color: whitesmoke !important;
+	border-color: rgba( 0, 0, 0, .75) !important;
+}
+
+.category{
+	font-family: "Allura-Regular";
+	font-size: 10em;
+}

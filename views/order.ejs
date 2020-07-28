@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%=title%></title>
+	<% include partials\head %>
+	<script src="/javascripts/registration.js" ></script>
+</head>
+<body>
+
+	<% include partials\nav %>
+
+	<div class="d-flex container-fluid bg-secondary h-100" id="orderDiv">
+		
+		<div class="carousel slide w-100 h-100 flex-grow-1" id="registration">
+
+			<ul class="carousel-indicators">
+				<li data-target="#registration" class="item1 active"></li>
+				<li data-target="#registration" class="item2"></li>
+				<li data-target="#registration" class="item3"></li>
+			</ul>
+
+			<div class="carousel-inner h-100">
+				<div class="carousel-item active h-100">
+					<% include order/switches %>
+				</div>
+				<div class="carousel-item">
+					<% include order/keycaps %>
+				</div>
+				<div class="carousel-item">
+					<% include order/cables %>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+</html>

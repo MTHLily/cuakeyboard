@@ -1,0 +1,10 @@
+<% currentSwitchImg = 'images/mxBlue.jpg' %>
+<img id="switchImg" class="mx-auto d-block" src=<%=currentSwitchImg%>  >
+<div class="carousel-caption d-flex flex-column p-2">
+	<h1 class="category">Switches</h1>
+	<select class="custom-select" id="switchSelect">
+		<option selected>Choose...</option>
+		<option value="mxBlue">Cherry MX Blue</option>
+	</select>
+	<button class="btn btn-reg p-2 m-5" onclick="$('#registration').carousel('next')">Next</button>
+</div>
